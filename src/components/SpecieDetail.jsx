@@ -25,6 +25,8 @@ export const SpecieDetail = () => {
   // taxonKey=5 por taxonKey${params.id}
   const ImageURL = 'https://api.gbif.org/v1/occurrence/search?taxonKey=5&mediaType=StillImage&limit=300'
 
+
+  // En los dos hooks de useEffect siguiente, la lista vacia sirve para que solo se ejecute una vez despues de montar el componente, no al actualizarlo
   // Hook para la obtención de los datos de la especie por medio de fetch
   useEffect(() => {
     fetch(`${DataURL}${params.id}`)
