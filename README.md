@@ -1,4 +1,4 @@
-
+<div align="justify>
 # Web Application for Species Search with React and GBIF API
 
 Welcome to our species search web application, where you can explore a wide variety of organisms using their scientific names.
@@ -40,3 +40,4 @@ This application makes use of the following technologies:
 3. **Interactive Map:**
    - Along with species details, you'll be able to see an interactive map displaying the geographical distribution of the queried species. This map is powered by OpenStreetMap and GBIF and allows you to visually explore the distribution of the species.
 <a href="https://gbif-react.netlify.app/specie/2952882">You can test the application here</a>
+</div>
