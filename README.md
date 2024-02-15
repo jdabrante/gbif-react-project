@@ -27,6 +27,8 @@ This application makes use of the following technologies:
 
 ## How It Works
 
+![Specie detail image](img/gbif-app-image.png)
+
 1. **Species Search:**
    - Enter the scientific name of the species you are interested in into the search field.
    - Type the name of the species and click on the desired result.
