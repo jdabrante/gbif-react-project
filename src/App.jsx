@@ -9,13 +9,16 @@ import { RiArrowGoBackFill } from "react-icons/ri";
 
 export default function App() {
   
-  
+  // Hook que se va a utilizar para setear los resultados obtenidos de la búsqueda
   const [results, setResults] = useState([])
+
+  // Función para borrar los resultados cuando se acceda al detelle de uno de estos
   const handleResultClick = (result) => {
     setResults([])
   }
 
   return (
+    // Creación de las rutas así como definición de los elementos que van a aparecer en las mismas
     <BrowserRouter>
       <div className='App'>
         <Routes>
@@ -23,7 +26,7 @@ export default function App() {
             <>
             <div className='search-bar-container'>
               <SearchBar setResults={setResults}/>
-              <SearchResultsList results={results}/>
+              <SearchResultsList results={results} onSpecieClick={handleResultClick}/>
             </div>
             <div className='index-image'>
               <img src={Ecosystem} alt="" />
@@ -34,7 +37,7 @@ export default function App() {
           <>
           <div className='search-bar-container'>
               <SearchBar setResults={setResults}/>
-              <SearchResultsList results={results}/>
+              <SearchResultsList results={results} />
           </div>
               <Link to={'/'}>
                 <RiArrowGoBackFill id="go-back-icon"/>
