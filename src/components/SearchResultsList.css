@@ -16,3 +16,12 @@
     text-decoration: none;
     color: #333;
 }
+
+@media only screen and (max-width: 768px) {
+    .results-list {
+        width: 70%;
+        top: 70px;
+
+    }
+
+}

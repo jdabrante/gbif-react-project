@@ -41,5 +41,11 @@
     justify-content: center;
     width: 90%;
   }
+  .index-image {
+    padding-top: 50px;
+  }
+  .index-image img {
+    width: 70%;
+  }
 
 }
