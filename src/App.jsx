@@ -12,7 +12,7 @@ export default function App() {
   // Hook que se va a utilizar para setear los resultados obtenidos de la búsqueda
   const [results, setResults] = useState([])
 
-  // Función para borrar los resultados cuando se acceda al detelle de uno de estos
+  // Función para borrar los resultados cuando se acceda al detalle de uno de estos
   const handleResultClick = (result) => {
     setResults([])
   }
